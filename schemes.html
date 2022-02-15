@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+        
+        html {
+            font-family: "Lucida Sans", sans-serif;
+        }
+        
+        .header {
+            background-color: #1177ca;
+            color: #ffffff;
+            padding: 15px;
+        }
+        
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .menu li {
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color: #33b5e5;
+            color: #ffffff;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+        
+        .menu li:hover {
+            background-color: #0099cc;
+        }
+        
+        .aside {
+            background-color: #33b5e5;
+            padding: 15px;
+            color: #ffffff;
+            text-align: center;
+            font-size: 14px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+        
+        .footer {
+            background-color: #0099cc;
+            color: #ffffff;
+            text-align: center;
+            font-size: 12px;
+            padding: 15px;
+        }
+        /* For mobile phones: */
+        
+        [class*="col-"] {
+            width: 100%;
+        }
+        
+        .heading {
+            color: white;
+        }
+        
+        @media only screen and (min-width: 768px) {
+            /* For desktop: */
+            .col-1 {
+                width: 8.33%;
+            }
+            .col-2 {
+                width: 16.66%;
+            }
+            .col-3 {
+                width: 25%;
+            }
+            .col-4 {
+                width: 33.33%;
+            }
+            .col-5 {
+                width: 41.66%;
+            }
+            .col-6 {
+                width: 50%;
+            }
+            .col-7 {
+                width: 58.33%;
+            }
+            .col-8 {
+                width: 66.66%;
+            }
+            .col-9 {
+                width: 75%;
+            }
+            .col-10 {
+                width: 83.33%;
+            }
+            .col-11 {
+                width: 91.66%;
+            }
+            .col-12 {
+                width: 100%;
+            }
+        }
+    </style>
+    <style>
+        @media only screen and (min-width: 768px) {
+            .row {
+                background-image: url('./images/background-img.jpg');
+                background-repeat: no-repeat;
+                background-attachment: inherit;
+                background-size: cover;
+            }
+        }
+        
+        .row {
+            background-image: url('./images/background-img.jpg');
+            background-repeat: no-repeat;
+            background-attachment: inherit;
+            background-position: top center;
+            background-size: cover;
+        }
+        
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+        }
+        
+        #eng-lang {
+            display: none;
+        }
+        
+        #eng-lang.active {
+            display: block;
+        }
+        
+        #tam-lang.active {
+            display: block;
+        }
+        
+        #tam-lang {
+            display: none;
+        }
+    </style>
+    <script>
+        function switchLang() {
+            var element = document.getElementById("eng-lang");
+            element.classList.toggle("active");
+            var element1 = document.getElementById("tam-lang");
+            element1.classList.toggle("active");
+        }
+    </script>
+</head>
+
+<body>
+
+    <div class="header">
+        <img src="./images/logo.png" style="height: 130px;
+    width: 130px;" />
+        <h1 style="    text-align: center;
+        top: 40px;
+        position: absolute;
+        right: 500px;">உலகத் தமிழர் திறன் வளர் சங்கம்
+        </h1>
+        <span>
+    </div>
+
+    <div class="row" style="height: 100%;
+position: absolute;
+width: 100%;">
+        <p class="bg-image"></p>
+        <div class="col-3 menu">
+            <ul>
+                <li><a href="./index.html" target="_blank">Home</a></li>
+                <li><a href="./schemes.html" target="_blank">Schemes</a></li>
+                <li><a href="./achievements.html" target="_blank">Achievements</a></li>
+                <li><a href="./gallery.html" target="_blank">Gallery</a></li>
+                <li><a href="./founder.html" target="_blank">Founder</a></li>
+            </ul>
+        </div>
+
+        <div class="col-6" style="color: white;">
+            <h1 class="heading">Schemes : </h1> <button onclick="switchLang()"> Tamil / English</button>
+
+            <div id="eng-lang">
+                <h3>*Special Project For children's Development*</h3>
+                <p>World Tamil Skills Development Association (WTSDA) And THINK AND DO Association <br>
+                <h3>Proudly presents</h3>
+                <p>*"Education is our Weapon"* *"Skills is our Pride"*<br>
+                <p>Passion + Profession = Achievement
+                <br>
+                <h3>Note :</h3>
+                <p>"Education with Arts and skills"
+                <br>
+                <p>*Starting Ceremony* - 22.02.2022
+                <br>
+                <p> Time :border
+                <h3>Purpose :</h3>
+                <p>The students under this Scheme
+                <br>
+                <p>1. To Read Daily
+                <br>
+                <p>2.To Develop Skills Daily
+                <br>
+                <p>Since , They must be motivate by coordinators , All should develop their talent Without any pressure
+                    .
+                <br>
+                <p>They get motivate by big achievers
+                <br>
+                <p>10 +2 Students Get scholarship Details and Higher Studies Detail
+                <br>
+                <h3>Principle :</h3>
+                <p>*"Education is For All"*<br>
+                <p>*"All are Achievers"*
+                <br>
+                <h3>Scheme Introduced By :
+                </h3>
+                <p>Sachin Lokesh and Durai Devendiran.
+                <br>
+            </div>
+            <div id="tam-lang" class="active">
+                <h3>சிறப்பு திட்டம் கல்வியே நம் ஆயுதம் குழந்தைகளின் வளர்ச்சிக்காக :</h3>
+                <h5>உலகத் தமிழர் திறன் வளர் சங்கம் மற்றும் வாசி யோசி குழுமம் இணைந்து நடத்தும்</h5>
+                <p>*"கல்வியே நம் ஆயுதம்"* *"கலையே நம் பெருமிதம்"* திட்டம்
+                <br>
+                <h3>*தொடக்க விழா : 22.02.2022*
+                </h3>
+                <h3>*நேரம் :*
+                </h3>
+                <h3>நோக்கம் :
+                </h3>
+                <p>*இந்த திட்டத்தில் சேர்க்கப்படும் மாணவர்கள்* கலையுடன்‌ கல்வி
+                <br>
+                <p>1.தினமும் கல்வி பயில வேண்டும்
+                <br>
+                <p>2.தினமும் தமக்கு தெரிந்த கலையை பயிற்சி செய்ய வேண்டும்.
+                <br>
+                <h3>*கலை + கல்வி = சாதனை*
+                </h3>
+                <h3>குறிப்பு :
+                </h3>
+                <p>மாணவர்களை சிறப்பு கண்காணிப்பாளர்கள் ஊக்கப்படுத்துவார்கள் தினமும் அவர்கள் கண்காணித்து எந்தவித சிறு மன
+                    அழுத்தம் இன்றி அவர்கள் திறமையை வளர்ப்பார்கள்.
+                <br>
+                <p>*இந்த திட்டத்தில் சேர்க்கப்படும் மாணவர்கள் மாதம் மாதம் பல சாதனையாளர்கள் மிகப்பெரிய ஆளுமைகள் மூலம்
+                    ஊக்கப்படுத்த படுவார்கள்*
+                <br>
+                <p>மேலும், *10,12 மாணவர்களுக்காண மேற்படிப்பு தகவல்கள் உதவித்தொகை தகவல்கள் வழங்கப்படும்*
+                <br>
+                <h5>*எந்தவித கட்டணமும் கிடையாது*
+                </h5>
+                <h3>*கொள்கை*:
+                </h3>
+                <p>அனைவருக்கும் கல்வி அனைவரும் சாதனையாளர்கள்
+                <br>
+                <h3>திட்டம் பொறுப்பாளர்கள் :
+                </h3>
+                <p>சச்சின் லோகேஷ் மற்றும் துரை தேவேந்திரன்
+                <br>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <!-- <div class="footer" style="clear: both;
+position: relative;
+height: 80px;
+margin-top: 830px;">
+        <p><span class="copyright_text">Copyright © 2022 <a href="#">Ettercap.</a>All rights reserved</span>
+        <span class="policy_terms">
+                <a href="#">Privacy policy</a>
+                <a href="#">Terms & condition</a>
+            </span></p>
+    </div> -->
+
+</body>
+
+</html>

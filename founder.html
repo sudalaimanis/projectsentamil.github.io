@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+
+        html {
+            font-family: "Lucida Sans", sans-serif;
+        }
+
+        .header {
+            background-color: #1177ca;
+            color: #ffffff;
+            padding: 15px;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color: #33b5e5;
+            color: #ffffff;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+
+        .menu li:hover {
+            background-color: #0099cc;
+        }
+
+        .aside {
+            background-color: #33b5e5;
+            padding: 15px;
+            color: #ffffff;
+            text-align: center;
+            font-size: 14px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+
+        .footer {
+            background-color: #0099cc;
+            color: #ffffff;
+            text-align: center;
+            font-size: 12px;
+            padding: 15px;
+        }
+
+        /* For mobile phones: */
+        [class*="col-"] {
+            width: 100%;
+
+        }
+
+        .heading {
+            color: white;
+        }
+
+        @media only screen and (min-width: 768px) {
+
+            /* For desktop: */
+            .col-1 {
+                width: 8.33%;
+            }
+
+            .col-2 {
+                width: 16.66%;
+            }
+
+            .col-3 {
+                width: 25%;
+            }
+
+            .col-4 {
+                width: 33.33%;
+            }
+
+            .col-5 {
+                width: 41.66%;
+            }
+
+            .col-6 {
+                width: 50%;
+            }
+
+            .col-7 {
+                width: 58.33%;
+            }
+
+            .col-8 {
+                width: 66.66%;
+            }
+
+            .col-9 {
+                width: 75%;
+            }
+
+            .col-10 {
+                width: 83.33%;
+            }
+
+            .col-11 {
+                width: 91.66%;
+            }
+
+            .col-12 {
+                width: 100%;
+            }
+        }
+    </style>
+    <style>
+        @media only screen and (min-width: 768px) {
+            .row {
+                background-image: url('./images/background-img.jpg');
+                background-repeat: no-repeat;
+                background-attachment: inherit;
+                background-size: cover;
+            }
+        }
+
+        /* Mobile */
+        .row {
+            background-image: url('./images/background-img.jpg');
+            background-repeat: no-repeat;
+            background-attachment: inherit;
+            background-position: center center;
+            background-size: cover;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="./images/logo.png" style="height: 130px;
+    width: 130px;" />
+        <h1 style="    text-align: center;
+        top: 40px;
+        position: absolute;
+        right: 500px;">உலகத் தமிழர் திறன் வளர் சங்கம்
+        </h1>
+        <span>
+    </div>
+    <div class="row" style="height: 100%;
+position: absolute;
+width: 100%;">
+        <p class="bg-image"></p>
+        <div class="col-3 menu">
+            <ul>
+                <li><a href="./index.html" target="_blank">Home</a></li>
+                <li><a href="./schemes.html" target="_blank">Schemes</a></li>
+                <li><a href="./achievements.html" target="_blank">Achievements</a></li>
+                <li><a href="./gallery.html" target="_blank">Gallery</a></li>
+                <li><a href="./founder.html" target="_blank">Founder</a></li>
+            </ul>
+        </div>
+        <div class="col-6" style="color: white;">
+            <h1 class="heading">Founder : </h1>
+            <h2> யு.லோகேஷ் </h2>
+                <h4>நிறுவனர் </h4>
+                <p class="ptag"><strong> இளம் கவிஞர், எழுத்தாளர் பல்வேறு உலக சாதனைகள் மற்றும்
+                        <br> பல்வேறு திறன்களிள் சிறந்த ஆளுமை.</strong></p>
+                <h2>ஆர்.ஜே. மூ.ஷரின் தாஜ்
+                </h2>
+                <h4>செயலாளர் </h4>
+                <p>பேச்சாளர் , கவிஞர் உலக சாதனையாளர் மற்றும் ஆகச்சிறந்த ஆளுமை.
+                </p>
+                <h2>கோவை.தேவிபிரியா</h2>
+                <h4>கௌரவ ஆலோசகர் </h4>
+                <p>ஆசிரியர், பேச்சாளர், தொகுப்பாளினி, மாபெரும் ஆளுமை.
+
+                </p>
+                <h2>துரை.தேவேந்திரன்
+                </h2>
+                <h4>தலைமை நிர்வாக அதிகாரி </h4>
+                <p>பேச்சாளர் மற்றும் ஆகச்சிறந்த ஆளுமை.
+
+                </p>
+                <h2>மஞ்சு.பா, யசோதா.D, பிரேமா , மற்றும் பல ஆளுமைகள். </h2>
+                <h4>மாவட்ட ஒருங்கிணைப்பாளர்கள் </h4>
+        </div>
+        <div class="col-3 right">
+            <div class="aside">
+                <img src="./images/founder.jpeg" style="height: 361px;
+              width: 421px;">
+            </div>
+        </div>
+    </div>
+    <div class="footer" style="clear: both;
+position: relative;
+height: 80px;
+margin-top: 830px;">
+        <p><span class="copyright_text">Copyright © 2022 <a href="#">Ettercap.</a>All rights reserved</span>
+            <span class="policy_terms">
+                <a href="#">Privacy policy</a>
+                <a href="#">Terms & condition</a>
+            </span>
+        </p>
+    </div>
+
+</body>
+
+</html>

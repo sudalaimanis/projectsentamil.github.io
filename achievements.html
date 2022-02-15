@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+
+        html {
+            font-family: "Lucida Sans", sans-serif;
+        }
+
+        .header {
+            background-color: #1177ca;
+            color: #ffffff;
+            padding: 15px;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            padding: 8px;
+            margin-bottom: 7px;
+            background-color: #33b5e5;
+            color: #ffffff;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+
+        .menu li:hover {
+            background-color: #0099cc;
+        }
+
+        .aside {
+            background-color: #33b5e5;
+            padding: 15px;
+            color: #ffffff;
+            text-align: center;
+            font-size: 14px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        }
+
+        .footer {
+            background-color: #0099cc;
+            color: #ffffff;
+            text-align: center;
+            font-size: 12px;
+            padding: 15px;
+        }
+
+        /* For mobile phones: */
+        [class*="col-"] {
+            width: 100%;
+
+        }
+
+        .heading {
+            color: white;
+        }
+
+        @media only screen and (min-width: 768px) {
+
+            /* For desktop: */
+            .col-1 {
+                width: 8.33%;
+            }
+
+            .col-2 {
+                width: 16.66%;
+            }
+
+            .col-3 {
+                width: 25%;
+            }
+
+            .col-4 {
+                width: 33.33%;
+            }
+
+            .col-5 {
+                width: 41.66%;
+            }
+
+            .col-6 {
+                width: 50%;
+            }
+
+            .col-7 {
+                width: 58.33%;
+            }
+
+            .col-8 {
+                width: 66.66%;
+            }
+
+            .col-9 {
+                width: 75%;
+            }
+
+            .col-10 {
+                width: 83.33%;
+            }
+
+            .col-11 {
+                width: 91.66%;
+            }
+
+            .col-12 {
+                width: 100%;
+            }
+        }
+    </style>
+    <style>
+        @media only screen and (min-width: 768px) {
+            .row {
+                background-image: url('./images/background-img.jpg');
+                background-repeat: no-repeat;
+                background-attachment: inherit;
+                background-size: cover;
+            }
+        }
+
+        /* Mobile */
+        .row {
+            background-image: url('./images/background-img.jpg');
+            background-repeat: no-repeat;
+            background-attachment: inherit;
+            background-position: center center;
+            background-size: cover;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="./images/logo.png" style="height: 130px;
+    width: 130px;" />
+        <h1 style="    text-align: center;
+        top: 40px;
+        position: absolute;
+        right: 500px;">உலகத் தமிழர் திறன் வளர் சங்கம்
+        </h1>
+        <span>
+    </div>
+    <div class="row" style="height: 100%;
+position: absolute;
+width: 100%;">
+        <p class="bg-image"></p>
+        <div class="col-3 menu">
+            <ul>
+                <li><a href="./index.html" target="_blank">Home</a></li>
+                <li><a href="./schemes.html" target="_blank">Schemes</a></li>
+                <li><a href="./achievements.html" target="_blank">Achievements</a></li>
+                <li><a href="./gallery.html" target="_blank">Gallery</a></li>
+                <li><a href="./founder.html" target="_blank">Founder</a></li>
+            </ul>
+        </div>
+        <div class="col-6" style="color: white;">
+            <h1 class="heading">Achievements : </h1>
+            <P> 1. 1200 மணி நேரம் தொடர் இணையவழி பேச்சரங்கம் சங்க இலக்கியங்களை பற்றி<br>
+            <P> 2. பள்ளி மாணவர்கள் 4020 இந்திய தேசிய கொடி வரைதல் ஒரு மணி நேரத்தில்.<br>
+            <P> 3. 12 மணி நேரம் இனியவை நாற்பது வாசித்தல் உலக சாதனை.<br>
+            <P> 4. 15 மணி நேரம விக்ரமாதித்தன் கதைகள் சொல்லுதல் உலக சாதனை.<br>
+            <P> 5. 15 மணி நேர தமிழர் விளையாட்டுகள் விளையாடும் உலக சாதனை.<br>
+            <P> 6. பள்ளி மாணவர்கள் 13 மணி நேர சிலம்பம் சுற்றுதல் உலக சாதனை.<br>
+            <P> 7. 26 மணி நேரம் அக்னி சிறகுகள் புத்தகம் வாசித்தல்<br>
+            <P> 8. 50 மணி நேர ஆங்கில நாவல் வாசித்தல் உலக சாதனை.<br>
+            <P> 9. 8 மணி நேர மாற்றுத் திறனாளிகள் பல்வேறு திறன் வெளிப்படுத்துதல் உலக சாதனை.<br>
+            <P> 10. 17.45 மணி நேர தொடர் ஓவியம் வரைதல் உலக சாதனை.<br>
+            <P> 11. 16 மணி நேர தமிழர் பாரம்பரியம் தலைப்பில் பல்வேறு திறன் வெளிப்படுத்துதல் உலக சாதனை.<br>
+            <P> 12. 100 நாட்கள் முதல் 100 குரளிள் 100 க்கும் மேற்பட்ட மழலைகள் "தினம் ஒரு குறள்" என்று நடத்தபட்ட உலக
+                சாதனை‌.3,300 காணொளிகள் அதாவது 3,300 திருக்குறளும் அதன் பொருளும் சேரப்பட்டது.<br>
+            <P> 13. 26 மணி நேர விவேகானந்தர் பிறந்த நாளை முன்னிட்டு நடத்தப்பட்ட பல்வேறு திறன் வெளிப்படுத்துதல் உலக
+                சாதனை.<br>
+            <P> 14. 12 மணி நேரம் வாசகம் உரைத்தல் உலக சாதனை.<br>
+            <P> 15. 15 மணி நேர சேக்ஸ்பியர் கதைகள் வாசித்தல்.<br>
+        </div>
+        <div class="col-3 right">
+            <div class="aside">
+                <img src="./images/achievements.jpeg" style="height: 361px;
+              width: 421px;">
+            </div>
+        </div>
+    </div>
+    <div class="footer" style="clear: both;
+position: relative;
+height: 80px;
+margin-top: 830px;">
+        <p><span class="copyright_text">Copyright © 2022 <a href="#">Ettercap.</a>All rights reserved</span>
+            <span class="policy_terms">
+                <a href="#">Privacy policy</a>
+                <a href="#">Terms & condition</a>
+            </span>
+        </p>
+    </div>
+
+</body>
+
+</html>
