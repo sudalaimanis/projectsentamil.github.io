@@ -9,6 +9,8 @@
     <style>
         * {
             box-sizing: border-box;
+            padding: 0;
+            margin: 0;
         }
         
         .row::after {
@@ -26,20 +28,24 @@
             font-family: "Lucida Sans", sans-serif;
         }
         
-        .header {
-            background-color: #1177ca;
-            color: #ffffff;
-            padding: 15px;
+        ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 25px 10px;
+            padding-right: 150px;
+            text-decoration: none;
         }
         
         .menu ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
+            overflow: hidden;
         }
         
         .menu li {
-            padding: 8px;
+            padding: 14px 16px;
             margin-bottom: 7px;
             background-color: #33b5e5;
             color: #ffffff;
@@ -63,21 +69,8 @@
             background-color: #0099cc;
             color: #ffffff;
             text-align: center;
-            font-size: 12px;
+            font-size: 14px;
             padding: 15px;
-        }
-        
-        .footer p.copyright_text {
-            top: 40px;
-        }
-        /* For mobile phones: */
-        
-        [class*="col-"] {
-            width: 100%;
-        }
-        
-        .heading {
-            color: white;
         }
         
         .fa {
@@ -134,6 +127,86 @@
             margin-right: 1%;
             margin-left: -78%;
             margin-top: 3px;
+        }
+        
+        .bg-img {
+            /* The image used */
+            background-image: url("./images/bg.jpeg");
+            min-height: 348px;
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* Needed to position the navbar */
+            position: relative;
+            width: 100%;
+        }
+        /* Position the navbar container inside the image */
+        
+        .container {
+            position: absolute;
+            margin: -75px;
+            width: auto;
+        }
+        /* The navbar */
+        
+        .topnav {
+            margin-top: 318px;
+            overflow: hidden;
+            background-color: #333;
+            margin-left: 72px;
+            height: 69px;
+        }
+        /* Navbar links */
+        
+        .topnav a {
+            margin-top: 346px;
+            overflow: hidden;
+            background-color: #ffd227;
+            margin-left: 72px;
+            height: 77px;
+        }
+        
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        
+        .active {
+            background-color: #04AA6D;
+        }
+        
+        .nav-heading {
+            color: #fff;
+            position: relative;
+            margin: -16px 667px;
+            margin-top: 89px;
+            margin-left: -579px;
+            font-size: 60px;
+            z-index: 1;
+        }
+        
+        .container .p {
+            display: block;
+        }
+        
+        .contact .a {
+            text-decoration: none;
+            padding-right: 38px;
+            justify-content: space-evenly;
+            margin: 15px 54px;
+            color: #fff;
+            font-size: 63px;
+            margin-top: -8px;
+            margin-right: 27px;
+        }
+        
+        .nav-heading {
+            float: right;
+        }
+        
+        .bg-image {
+            width: 100%;
         }
         
         @media only screen and (min-width: 768px) {
@@ -199,10 +272,15 @@
             background-size: cover;
         }
         
-        a {
+        .contact .a {
             text-decoration: none;
-            color: white;
-            font-weight: 500;
+            padding-right: 38px;
+            justify-content: space-evenly;
+            margin: 15px 54px;
+            color: #fff;
+            font-size: 63px;
+            margin-top: -8px;
+            margin-right: 27px;
         }
     </style>
 </head>
@@ -210,29 +288,28 @@
 <body>
 
     <div class="header">
-        <img src="./images/logo.png" style="height: 130px;
-    width: 130px;" />
-        <h1 style="    text-align: center;
-        top: 40px;
-        position: absolute;
-        right: 500px;">உலகத் தமிழர் திறன் வளர் சங்கம்
-        </h1>
-        <span>
+        <h1 class="nav-heading">உலகத் தமிழர் திறன் வளர் சங்கம்</h1>
+
+
+        <div class="bg-img"></div>
+        <div class="container">
+            <div class="topnav">
+                <a href="./index.html">Home</a>
+                <a href="./achievements.html">Achievements</a>
+                <a href="./schemes.html">Schemes</a>
+                <a href="./gallery.html">Gallery</a>
+                <a href="./gallery.html">Contact Us</a>
+            </div>
+        </div>
+
     </div>
+
 
     <div class="row" style="height: 100%;
 position: absolute;
 width: 100%;">
-        <p class="bg-image"></p>
-        <div class="col-3 menu">
-            <ul>
-                <li><a href="./index.html" target="_blank">Home</a></li>
-                <li><a href="./schemes.html" target="_blank">Schemes</a></li>
-                <li><a href="./achievements.html" target="_blank">Achievements</a></li>
-                <li><a href="./gallery.html" target="_blank">Gallery</a></li>
-                <li><a href="./founder.html" target="_blank">Founder</a></li>
-            </ul>
-        </div>
+        <p class="bg-image" style="width:100;     background-size: 97%;"></p>
+
 
         <div class="col-6" style="color: white;">
             <h1 class="heading"> World Tamil Skills Development Association (WTSDA)</h1>
@@ -246,31 +323,29 @@ width: 100%;">
 
 
     </div>
-
     <div class="footer" style="clear: both;
-position: relative;
-height: 80px;
-margin-top: 830px;">
+    position: relative;
+    height: 80px;
+    margin-top: 1069px;">
         <div class="contact">
             <a href="tel:+91 6380023891"><img src="./images/calls.png" class="call" />+91 6380023891</a><br>
-            <a href="mailto:ylokesh18062001@gmail.com"><img src="./images/mail.png"
-                    class="mail" />ylokesh18062001@gmail.com</a>
+            <a href="mailto:ylokesh18062001@gmail.com"><img src="./images/mail.png" class="mail" />ylokesh18062001@gmail.com</a>
 
             <p style="margin-top:-50px"><span class="copyright_text">Copyright © 2022 <a href="#">Ettercap.</a>All
-                    rights reserved</span>
-        <span class="policy_terms">
-                    <a href="#">Privacy policy</a>
-                    <a href="#">Terms & condition</a></span></p>
+                        rights reserved</span>
+                <span class="policy_terms">
+                        <a href="#">Privacy policy</a>
+                        <a href="#">Terms & condition</a></span></p>
 
-        <div class="social-media">
-            <span>
+            <div class="social-media">
+                <span>
                 <a href="https://www.facebook.com/111729478102577/photos/a.111731024769089/111731031435755/?type=3&app=fbl" class="fa fa-facebook"></a>
                 <a href="https://twitter.com/SachinLokesh18?t=3-TZdsz0F8hwjGAvzbLo8A&s=09" class="fa fa-twitter"></a>
                 <a href="https://instagram.com/sachin.lokesh?utm_medium=copy_link" class="fa fa-instagram"></a>
                 <a href="https://www.youtube.com/channel/UCOl0rO5Oi0B74DV1X5nX9sA" class="fa fa-youtube"></a>
-                </span>
+                    </span>
+            </div>
         </div>
-    </div>
 
     </div>
 
