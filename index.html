@@ -28,32 +28,24 @@
             font-family: "Lucida Sans", sans-serif;
         }
         
-        ul li a {
+        ul {
+            list-style-type: none;
+            margin: -30px;
+            padding: -6px;
+            overflow: hidden;
+            background-color: #6e4a17;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
             display: block;
             color: white;
             text-align: center;
-            padding: 25px 10px;
-            padding-right: 150px;
-            text-decoration: none;
-        }
-        
-        .menu ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;
-        }
-        
-        .menu li {
             padding: 14px 16px;
-            margin-bottom: 7px;
-            background-color: #33b5e5;
-            color: #ffffff;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-        }
-        
-        .menu li:hover {
-            background-color: #0099cc;
+            text-decoration: none;
         }
         
         .aside {
@@ -66,11 +58,15 @@
         }
         
         .footer {
-            background-color: #0099cc;
+            background-color: #6e4a17;
             color: #ffffff;
             text-align: center;
             font-size: 14px;
             padding: 15px;
+            clear: both;
+            position: relative;
+            height: 80px;
+            margin-top: 689px;
         }
         
         .fa {
@@ -90,27 +86,27 @@
         }
         
         .fa-facebook {
-            margin-top: -1px;
-            background: #3B5998;
+            margin-top: 1px;
+            background: #6e4a17;
             color: white;
-            border-radius: 12px;
-            width: 11px;
+            border-radius: 11px;
+            width: 10px;
         }
         
         .fa-twitter {
-            background: #55ACEE;
+            background: #6e4a17;
             color: white;
-            border-radius: 12px;
+            border-radius: 11px;
         }
         
         .fa-youtube {
-            background: #bb0000;
+            background: #6e4a17;
             color: white;
             border-radius: 12px;
         }
         
         .fa-instagram {
-            background: #125688;
+            background: #6e4a17;
             color: white;
             border-radius: 12px;
         }
@@ -131,15 +127,13 @@
         
         .bg-img {
             /* The image used */
-            background-image: url("./images/bg.jpeg");
-            min-height: 348px;
-            /* Center and scale the image nicely */
+            background-image: url(./images/bg.jpeg);
+            min-height: 321px;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            /* Needed to position the navbar */
             position: relative;
-            width: 100%;
+            width: 102%;
         }
         /* Position the navbar container inside the image */
         
@@ -151,20 +145,41 @@
         /* The navbar */
         
         .topnav {
-            margin-top: 318px;
+            margin-top: 7px;
             overflow: hidden;
             background-color: #333;
-            margin-left: 72px;
-            height: 69px;
+            margin-left: 145px;
+            height: 62px;
+            list-style-type: none;
+            margin: 13px;
+            padding: 0;
+            overflow: hidden;
+            background-color: #6e4a17;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 10px 88px;
+            padding-right: 150px;
+            text-decoration: none;
         }
         /* Navbar links */
         
         .topnav a {
-            margin-top: 346px;
+            margin-top: 26px;
             overflow: hidden;
-            background-color: #ffd227;
-            margin-left: 72px;
-            height: 77px;
+            background-color: #f1e1e1;
+            margin-left: 106px;
+            height: 82px;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 27px -4px;
+            text-decoration: none;
+            padding: -11px 11px;
+            margin-bottom: 9px;
+            background-color: #6e4a17;
+            color: #fffbfb;
+            box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
         }
         
         .topnav a:hover {
@@ -179,10 +194,10 @@
         .nav-heading {
             color: #fff;
             position: relative;
-            margin: -16px 667px;
+            margin: -16px 354px;
             margin-top: 89px;
             margin-left: -579px;
-            font-size: 60px;
+            font-size: 58px;
             z-index: 1;
         }
         
@@ -190,15 +205,21 @@
             display: block;
         }
         
-        .contact .a {
+        .contact a {
             text-decoration: none;
-            padding-right: 38px;
-            justify-content: space-evenly;
-            margin: 15px 54px;
+            padding-right: 34px;
+            /* justify-content: space-evenly; */
+            margin: 28px 0px;
             color: #fff;
-            font-size: 63px;
-            margin-top: -8px;
-            margin-right: 27px;
+            font-size: 16px;
+            margin-top: -6px;
+            margin-right: 25px;
+        }
+        
+        .contact p a {
+            margin-top: 0px;
+            padding-left: 6px;
+            margin-left: -5px;
         }
         
         .nav-heading {
@@ -207,6 +228,12 @@
         
         .bg-image {
             width: 100%;
+        }
+        
+        .container1 .row1 .col-md-4 {
+            width: 50%;
+            margin-left: 161px;
+            margin-top: 72px;
         }
         
         @media only screen and (min-width: 768px) {
@@ -257,6 +284,12 @@
                 background-attachment: inherit;
                 background-size: cover;
             }
+            .footer {
+                clear: both;
+                position: relative;
+                height: 80px;
+                margin-top: 1000px;
+            }
         }
         /* Mobile */
         
@@ -294,11 +327,13 @@
         <div class="bg-img"></div>
         <div class="container">
             <div class="topnav">
-                <a href="./index.html">Home</a>
-                <a href="./achievements.html">Achievements</a>
-                <a href="./schemes.html">Schemes</a>
-                <a href="./gallery.html">Gallery</a>
-                <a href="./gallery.html">Contact Us</a>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./schemes.html">Schemes</a></li>
+                    <li> <a href="./achievements.html">Achievements</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="./contactus.html">Contact us</a></li>
+                </ul>
             </div>
         </div>
 
@@ -312,38 +347,44 @@ width: 100%;">
 
 
         <div class="col-6" style="color: white;">
-            <h1 class="heading"> World Tamil Skills Development Association (WTSDA)</h1>
-            <p>உலகத் தமிழர் திறன் வளர் சங்கம்
-                <p>அறம் செய்ய கரம் கொடுப்போம்...</p>
-                <p>கலையுடன் கல்வி இச்சங்கம்</p>
-                <p>தமிழனால் தமிழர் திறன் வளர்க்க உருவாக்கப்பட்ட சங்கம்.</p>
-            </p>
+            <h1 class="heading"> World Tamil Skills Development Association (WTSDA)</h1><br>
+            <p>உலகத் தமிழர் திறன் வளர் சங்கம்</p><br>
+            <p>அறம் செய்ய கரம் கொடுப்போம்...</p><br>
+            <p>கலையுடன் கல்வி இச்சங்கம்</p><br>
+            <p>தமிழனால் தமிழர் திறன் வளர்க்க உருவாக்கப்பட்ட சங்கம்.</p>
+
+        </div>
+        <div class="container1">
+            <div class="row1">
+                <div class="col-md-4">
+                    <a href="https://youtube.com/channel/UCOl0rO5Oi0B74DV1X5nX9sA" target="_blank"><img src="./images/yt.jpeg" alt="youtube"></a>
+                </div>
+            </div>
         </div>
 
 
 
     </div>
-    <div class="footer" style="clear: both;
-    position: relative;
-    height: 80px;
-    margin-top: 1069px;">
+    <div class="footer">
         <div class="contact">
             <a href="tel:+91 6380023891"><img src="./images/calls.png" class="call" />+91 6380023891</a><br>
             <a href="mailto:ylokesh18062001@gmail.com"><img src="./images/mail.png" class="mail" />ylokesh18062001@gmail.com</a>
 
             <p style="margin-top:-50px"><span class="copyright_text">Copyright © 2022 <a href="#">Ettercap.</a>All
-                        rights reserved</span>
+                    rights reserved</span>
                 <span class="policy_terms">
-                        <a href="#">Privacy policy</a>
-                        <a href="#">Terms & condition</a></span></p>
+                    <a href="#">Privacy policy</a>
+                    <a href="#">Terms & condition</a></span></p>
 
             <div class="social-media">
                 <span>
-                <a href="https://www.facebook.com/111729478102577/photos/a.111731024769089/111731031435755/?type=3&app=fbl" class="fa fa-facebook"></a>
-                <a href="https://twitter.com/SachinLokesh18?t=3-TZdsz0F8hwjGAvzbLo8A&s=09" class="fa fa-twitter"></a>
-                <a href="https://instagram.com/sachin.lokesh?utm_medium=copy_link" class="fa fa-instagram"></a>
-                <a href="https://www.youtube.com/channel/UCOl0rO5Oi0B74DV1X5nX9sA" class="fa fa-youtube"></a>
-                    </span>
+                    <a href="https://www.facebook.com/111729478102577/photos/a.111731024769089/111731031435755/?type=3&app=fbl"
+                        class="fa fa-facebook"></a>
+                    <a href="https://twitter.com/SachinLokesh18?t=3-TZdsz0F8hwjGAvzbLo8A&s=09"
+                        class="fa fa-twitter"></a>
+                    <a href="https://instagram.com/sachin.lokesh?utm_medium=copy_link" class="fa fa-instagram"></a>
+                    <a href="https://www.youtube.com/channel/UCOl0rO5Oi0B74DV1X5nX9sA" class="fa fa-youtube"></a>
+                </span>
             </div>
         </div>
 
