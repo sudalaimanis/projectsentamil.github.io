@@ -28,6 +28,11 @@
             font-family: "Lucida Sans", sans-serif;
         }
         
+        .col-5 {
+            color: white;
+            margin: 48px;
+        }
+        
         ul {
             list-style-type: none;
             margin: -30px;
@@ -66,7 +71,7 @@
             clear: both;
             position: relative;
             height: 80px;
-            margin-top: 687px;
+            margin-top: 685px;
         }
         
         .fa {
@@ -78,7 +83,7 @@
             margin: -8px 6px;
             margin-left: 31px;
             margin-right: 4px;
-            margin-top: -13px;
+            margin-top: 18px;
         }
         
         .fa:hover {
@@ -236,6 +241,10 @@
             margin-top: 72px;
         }
         
+        .col-sm-4 {
+            width: 100%;
+        }
+        
         @media only screen and (min-width: 768px) {
             /* For desktop: */
             .col-1 {
@@ -277,7 +286,12 @@
         }
     </style>
     <style>
-    @media (min-width: 768px) {
+        /* mobile view */
+        
+        @media (max-width: 700px) {}
+        /* ----- */
+        
+        @media (min-width: 768px) {
             .row {
                 background-image: url('./images/background-img.jpg');
                 background-repeat: no-repeat;
@@ -292,30 +306,32 @@
                 width: 58%;
                 margin-left: 131px;
                 margin-top: 337px; */
+            /* } */
         }
-    }
-    /* Mobile */
-    .row {
-        background-image: url('./images/background-img.jpg');
-        background-repeat: no-repeat;
-        background-attachment: inherit;
-        background-position: center center;
-        background-size: cover;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-    }
-    .contact .a {
-        text-decoration: none;
-        padding-right: 38px;
-        justify-content: space-evenly;
-        margin: 15px 54px;
-        color: #fff;
-        font-size: 63px;
-        margin-top: -8px;
-        margin-right: 27px;
-    }
+        /* Mobile */
+        
+        .row {
+            background-image: url('./images/background-img.jpg');
+            background-repeat: no-repeat;
+            background-attachment: inherit;
+            background-position: center center;
+            background-size: cover;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        
+        .contact .a {
+            text-decoration: none;
+            padding-right: 38px;
+            justify-content: space-evenly;
+            margin: 15px 54px;
+            color: #fff;
+            font-size: 63px;
+            margin-top: -8px;
+            margin-right: 27px;
+        }
     </style>
 </head>
 
@@ -333,7 +349,7 @@
                     <li><a href="./schemes.html">Schemes</a></li>
                     <li> <a href="./achievements.html">Achievements</a></li>
                     <li><a href="./gallery.html">Gallery</a></li>
-                    <li><a href="./contactus.html">Contact us</a></li>
+                    <li><a href="./contact.html">Contact us</a></li>
                 </ul>
             </div>
         </div>
@@ -347,7 +363,7 @@ width: 100%;">
         <p class="bg-image" style="width:100;     background-size: 97%;"></p>
 
 
-        <div class="col-6" style="color: white;">
+        <div class="col-5">
             <h1 class="heading"> World Tamil Skills Development Association (WTSDA)</h1><br>
             <p>உலகத் தமிழர் திறன் வளர் சங்கம்</p><br>
             <p>அறம் செய்ய கரம் கொடுப்போம்...</p><br>
@@ -357,8 +373,11 @@ width: 100%;">
         </div>
         <div class="container1">
             <div class="row1">
-                <div class="col-md-4">
-                    <a href="https://youtube.com/channel/UCOl0rO5Oi0B74DV1X5nX9sA" target="_blank"><img src="./images/yt.jpeg" alt="youtube"></a>
+                <div class="col-sm-4">
+                    <a href="https://youtube.com/channel/UCOl0rO5Oi0B74DV1X5nX9sA" target="_blank"><img src="./images/yt.png" style="width: 60%;
+                        margin-bottom: x;
+                        margin-top: -172px;
+                        margin-left: -199px;" alt="youtube"></a>
                 </div>
             </div>
         </div>

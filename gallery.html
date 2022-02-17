@@ -13,6 +13,10 @@
     <style>
         * {
             box-sizing: border-box;
+            margin: -5px;
+            margin-right: 0px;
+            margin-left: -4px;
+            padding: 0px;
         }
         
         .row::after {
@@ -34,6 +38,21 @@
             background-color: #1177ca;
             color: #ffffff;
             padding: 15px;
+        }
+        
+        .nav-heading {
+            float: right;
+        }
+        
+        .nav-heading {
+            color: #fff;
+            position: relative;
+            margin: 9px 306px;
+            margin-top: 48px;
+            margin-left: -579px;
+            font-size: 58px;
+            z-index: 1;
+            font-weight: bold;
         }
         
         .menu ul {
@@ -63,13 +82,36 @@
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
         }
         
+        ul {
+            list-style-type: none;
+            margin: -30px;
+            padding: -6px;
+            overflow: hidden;
+            background-color: #6e4a17;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
         .footer {
-            background-color: #0099cc;
+            background-color: #6e4a17;
             color: #ffffff;
             text-align: center;
-            font-size: 12px;
+            font-size: 14px;
             padding: 15px;
-            top: -23px;
+            clear: both;
+            position: relative;
+            height: 80px;
+            margin-top: 690px;
         }
         
         .fa {
@@ -81,7 +123,7 @@
             margin: -8px 6px;
             margin-left: 31px;
             margin-right: 4px;
-            margin-top: -13px;
+            margin-top: 18px;
         }
         
         .fa:hover {
@@ -89,33 +131,29 @@
         }
         
         .fa-facebook {
-            margin-top: -1px;
-            background: #3B5998;
+            margin-top: 1px;
+            background: #6e4a17;
             color: white;
-            border-radius: 12px;
-            width: 11px;
+            border-radius: 11px;
+            width: 10px;
         }
         
         .fa-twitter {
-            background: #55ACEE;
+            background: #6e4a17;
             color: white;
-            border-radius: 12px;
+            border-radius: 11px;
         }
         
         .fa-youtube {
-            background: #bb0000;
+            background: #6e4a17;
             color: white;
             border-radius: 12px;
         }
         
         .fa-instagram {
-            background: #125688;
+            background: #6e4a17;
             color: white;
             border-radius: 12px;
-        }
-        
-        .contact {
-            margin-top: -10px;
         }
         
         .call {
@@ -130,6 +168,69 @@
             margin-right: 1%;
             margin-left: -78%;
             margin-top: 3px;
+        }
+        
+        .bg-img {
+            /* The image used */
+            background-image: url(./images/bg.jpeg);
+            min-height: 321px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            width: 103%;
+        }
+        /* Position the navbar container inside the image */
+        
+        .container {
+            position: absolute;
+            margin: -75px;
+            width: auto;
+        }
+        /* The navbar */
+        
+        .topnav {
+            margin-top: 7px;
+            overflow: hidden;
+            background-color: #333;
+            margin-left: 145px;
+            height: 76px;
+            list-style-type: none;
+            margin: 13px;
+            padding: 0;
+            overflow: hidden;
+            background-color: #6e4a17;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 12px 88px;
+            padding-right: 152px;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+        /* Navbar links */
+        
+        .topnav a {
+            margin-top: 26px;
+            overflow: hidden;
+            background-color: #f1e1e1;
+            margin-left: 106px;
+            height: 82px;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 27px -4px;
+            text-decoration: none;
+            padding: -11px 11px;
+            margin-bottom: 9px;
+            background-color: #6e4a17;
+            color: #fffbfb;
+            box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+        }
+        
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
         }
         /* For mobile phones: */
         
@@ -214,28 +315,27 @@
 
 <body>
     <div class="header">
-        <img src="./images/logo.png" style="height: 130px;
-    width: 130px;" />
-        <h1 style="text-align: center;
-        top: 40px;
-        position: absolute;
-        right: 500px;">உலகத் தமிழர் திறன் வளர் சங்கம்
-        </h1>
-        <span>
+        <h1 class="nav-heading">உலகத் தமிழர் திறன் வளர் சங்கம்</h1>
+
+
+        <div class="bg-img"></div>
+        <div class="container">
+            <div class="topnav">
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./schemes.html">Schemes</a></li>
+                    <li> <a href="./achievements.html">Achievements</a></li>
+                    <li><a href="./gallery.html">Gallery</a></li>
+                    <li><a href="./contact.html">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+
     </div>
     <div class="row" style="height: 100%;
-position: absolute;
-width: 100%;">
-        <p class="bg-image"></p>
-        <div class="col-3 menu">
-            <ul>
-                <li><a href="./index.html" target="_blank">Home</a></li>
-                <li><a href="./schemes.html" target="_blank">Schemes</a></li>
-                <li><a href="./achievements.html" target="_blank">Achievements</a></li>
-                <li><a href="./gallery.html" target="_blank">Gallery</a></li>
-                <li><a href="./founder.html" target="_blank">Founder</a></li>
-            </ul>
-        </div>
+    position: absolute;
+    width: 101.4%;">
+        <p class="bg-image" style="width:100;     background-size: 97%;"></p>
         <div class="col-6" style="color: white;">
             <h1 class="heading">Gallery : </h1>
             <div class="w3-content w3-section" style="max-width:500px">
@@ -263,50 +363,49 @@ width: 100%;">
                 <img class="mySlides" src="./images/22.jpg" style="width:75%">
                 <img class="mySlides" src="./images/23.jpg" style="width:75%">
 
-              </div>
+            </div>
         </div>
     </div>
     <script>
         var myIndex = 0;
         carousel();
-        
-        function carousel() {
-          var i;
-          var x = document.getElementsByClassName("mySlides");
-          for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";  
-          }
-          myIndex++;
-          if (myIndex > x.length) {myIndex = 1}    
-          x[myIndex-1].style.display = "block";  
-          setTimeout(carousel, 2000); // Change image every 2 seconds
-        }
-        </script>
-     <div class="footer" style="clear: both;
-     position: relative;
-     height: 80px;
-     margin-top: 830px;">
-             <div class="contact">
-                 <a href="tel:+91 6380023891"><img src="./images/calls.png" class="call" />+91 6380023891</a><br>
-                 <a href="mailto:ylokesh18062001@gmail.com"><img src="./images/mail.png"
-                         class="mail" />ylokesh18062001@gmail.com</a>
-     
-                 <p style="    margin-top: -41px;
-                 margin-left: 74px;"><span class="copyright_text">Copyright © 2022 <a href="#">Ettercap.</a>All
-                         rights reserved</span>
-        <span class="policy_terms">
-                         <a href="#">Privacy policy</a>
-                         <a href="#">Terms & condition</a></span></p>
 
-        <div class="social-media">
-            <span>
-                <a href="https://www.facebook.com/111729478102577/photos/a.111731024769089/111731031435755/?type=3&app=fbl" class="fa fa-facebook"></a>
-                <a href="https://twitter.com/SachinLokesh18?t=3-TZdsz0F8hwjGAvzbLo8A&s=09" class="fa fa-twitter"></a>
-                <a href="https://instagram.com/sachin.lokesh?utm_medium=copy_link" class="fa fa-instagram"></a>
-                <a href="https://www.youtube.com/channel/UCOl0rO5Oi0B74DV1X5nX9sA" class="fa fa-youtube"></a>
-                     </span>
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            myIndex++;
+            if (myIndex > x.length) {
+                myIndex = 1
+            }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+    </script>
+    <div class="footer">
+        <div class="contact">
+            <a href="tel:+91 6380023891"><img src="./images/calls.png" class="call" />+91 6380023891</a><br>
+            <a href="mailto:ylokesh18062001@gmail.com"><img src="./images/mail.png" class="mail" />ylokesh18062001@gmail.com</a>
+
+            <p style="margin-top:-50px"><span class="copyright_text">Copyright © 2022 <a href="#">Ettercap.</a>All
+                    rights reserved</span>
+                <span class="policy_terms">
+                    <a href="#">Privacy policy</a>
+                    <a href="#">Terms & condition</a></span></p>
+
+            <div class="social-media">
+                <span>
+                    <a href="https://www.facebook.com/111729478102577/photos/a.111731024769089/111731031435755/?type=3&app=fbl"
+                        class="fa fa-facebook"></a>
+                    <a href="https://twitter.com/SachinLokesh18?t=3-TZdsz0F8hwjGAvzbLo8A&s=09"
+                        class="fa fa-twitter"></a>
+                    <a href="https://instagram.com/sachin.lokesh?utm_medium=copy_link" class="fa fa-instagram"></a>
+                    <a href="https://www.youtube.com/channel/UCOl0rO5Oi0B74DV1X5nX9sA" class="fa fa-youtube"></a>
+                </span>
+            </div>
         </div>
-    </div>
 
     </div>
 
