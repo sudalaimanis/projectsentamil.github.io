@@ -407,6 +407,9 @@ include './email.php';
             .footer .contact .copyright_text {
                 margin: 0px;
             }
+            .footer .contact p {
+                margin-top: -65px;
+            }
             .container1 {
                 position: absolute;
                 margin: 97px;
@@ -418,13 +421,11 @@ include './email.php';
                 background-image: url('./images/background-img.jpg');
                 background-repeat: no-repeat;
                 background-attachment: inherit;
-                background-position: center center;
+                background-position: top center;
                 background-size: cover;
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;
-                height: 792px;
+                height: 800px;
+                position: absolute;
+                width: 101.4%;
             }
         }
     </style>
@@ -439,17 +440,19 @@ include './email.php';
         }
         /* Mobile */
         
+        .footer .contact p {
+            margin-top: -40px;
+        }
+        
         .row {
             background-image: url('./images/background-img.jpg');
             background-repeat: no-repeat;
             background-attachment: inherit;
-            background-position: center center;
+            background-position: top center;
             background-size: cover;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-            height: 792px;
+            height: 800px;
+            position: absolute;
+            width: 101.4%;
         }
         
         a {
@@ -511,9 +514,7 @@ include './email.php';
         </div>
 
     </div>
-    <div class="row" style="
-    position: absolute;
-    width: 101.4%;">
+    <div class="row">
         <p class="bg-image" style="width:100;     background-size: 97%;"></p>
         <div class="col-6" style="color: rgb(236, 148, 75);font-size: 25px;font-weight: bold;">
 
@@ -548,7 +549,7 @@ include './email.php';
                 <a href="tel:+91 6380023891"><img src="./images/calls.png" class="call" />+91 6380023891</a><br>
                 <a href="mailto:ylokesh18062001@gmail.com"><img src="./images/mail.png" class="mail" />ylokesh18062001@gmail.com</a>
 
-                <p style="margin-top:-55px;"><span class="copyright_text">Copyright © 2022 <a href="#">Ettercap.</a>All
+                <p><span class="copyright_text">Copyright © 2022 <a href="#">Ettercap.</a>All
                     rights reserved</span>
                     <span class="policy_terms">
                     <a href="#">Privacy policy</a>
