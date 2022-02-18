@@ -38,7 +38,7 @@
             margin: -30px;
             padding: -6px;
             overflow: hidden;
-            background-color: #6e4a17;
+            /*background-color: #ffb955;*/
         }
         
         li {
@@ -71,7 +71,7 @@
             clear: both;
             position: relative;
             height: 80px;
-            margin-top: 685px;
+            margin-top: 950px;
         }
         
         .fa {
@@ -132,8 +132,8 @@
         
         .bg-img {
             /* The image used */
-            background-image: url(./images/bg.jpeg);
-            min-height: 321px;
+            background-image: url(./images/nav.jpeg);
+            min-height: 295px;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -152,16 +152,16 @@
         .topnav {
             margin-top: 7px;
             overflow: hidden;
-            background-color: #333;
+            /* background-color: #333; */
             margin-left: 145px;
             height: 62px;
             list-style-type: none;
             margin: 13px;
             padding: 0;
             overflow: hidden;
-            background-color: #6e4a17;
+            /* background-color: #000000; */
             display: block;
-            color: white;
+            /* color: white; */
             text-align: center;
             padding: 10px 88px;
             padding-right: 150px;
@@ -172,37 +172,37 @@
         .topnav a {
             margin-top: 26px;
             overflow: hidden;
-            background-color: #f1e1e1;
+            /* background-color: #f1e1e1; */
             margin-left: 106px;
             height: 82px;
             display: block;
             color: white;
             text-align: center;
+            font-weight: 900;
             padding: 27px -4px;
             text-decoration: none;
             padding: -11px 11px;
             margin-bottom: 9px;
-            background-color: #6e4a17;
-            color: #fffbfb;
+            /* background-color: #6e4a17; */
+            color: #0023ff;
             box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
         }
         
         .topnav a:hover {
-            background-color: #ddd;
-            color: black;
+            background-color: rgb(206, 194, 86);
+            color: rgb(0, 17, 255);
         }
-        
-        .active {
+        /* .active {
             background-color: #04AA6D;
-        }
+        } */
         
         .nav-heading {
             color: #fff;
             position: relative;
-            margin: -16px 354px;
+            margin: -16px 614px;
             margin-top: 89px;
             margin-left: -579px;
-            font-size: 58px;
+            font-size: 45px;
             z-index: 1;
         }
         
@@ -239,6 +239,13 @@
             width: 50%;
             margin-left: 161px;
             margin-top: 72px;
+        }
+        
+        .container1 .row1 .col-sm-4 a img {
+            width: 60%;
+            margin-bottom: 0;
+            margin-top: -172px;
+            margin-left: -199px;
         }
         
         .col-sm-4 {
@@ -288,7 +295,133 @@
     <style>
         /* mobile view */
         
-        @media (max-width: 700px) {}
+        @media (max-width: 768px) {
+            .header .nav-heading {
+                margin: -4px 322px;
+                margin-top: 88px;
+                margin-left: -348px;
+                font-size: 22px;
+            }
+            .topnav {
+                height: 52px;
+                list-style-type: none;
+                margin: 12px;
+                /* padding: 0; */
+                overflow: hidden;
+                /* background-color: #000000; */
+                display: block;
+                /* color: white; */
+                text-align: center;
+                padding: 16px 16px;
+                padding-right: 114px;
+                text-decoration: none;
+            }
+            /* Navbar links */
+            .topnav a {
+                margin-top: 26px;
+                overflow: hidden;
+                /* background-color: #f1e1e1; */
+                margin-left: 57px;
+                height: 82px;
+                display: block;
+                color: white;
+                text-align: center;
+                font-weight: 900;
+                padding: 27px -4px;
+                text-decoration: none;
+                padding: 9px 0px;
+                margin-bottom: 9px;
+                /* background-color: #6e4a17; */
+                color: #0023ff;
+                box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
+            }
+            .topnav a:hover {
+                background-color: rgb(206, 194, 86);
+                color: rgb(0, 17, 255);
+            }
+            .container {
+                position: absolute;
+                margin: -76px;
+                width: auto;
+                padding: 6px 29px;
+            }
+            ul {
+                list-style-type: none;
+                margin: -30px;
+                padding: -6px;
+                overflow: hidden;
+                /*background-color: #ffb955;*/
+            }
+            li {
+                float: left;
+            }
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+            .container1 .row1 .col-sm-4 a img {
+                width: 60%;
+                margin-bottom: 0;
+                margin-top: 0px;
+                margin-left: -10px;
+            }
+            .col-5 {
+                color: white;
+                margin: 69px;
+                line-height: 37px;
+            }
+            .footer {
+                background-color: #6e4a17;
+                color: #ffffff;
+                text-align: center;
+                font-size: 14px;
+                padding: 15px;
+                clear: both;
+                position: relative;
+                height: 80px;
+                margin-top: 950px;
+            }
+            .fa {
+                padding: 22px -2px;
+                font-size: 18px;
+                width: 16px;
+                text-align: left;
+                text-decoration: none;
+                margin: -8px 6px;
+                margin-left: 31px;
+                margin-right: 4px;
+                margin-top: 18px;
+            }
+            .contact {
+                margin: 7px;
+                margin-left: 75px;
+                margin-top: 0px;
+            }
+            .contact a {
+                text-decoration: none;
+                padding-right: 34px;
+                /* justify-content: space-evenly; */
+                margin: 28px 0px;
+                color: #fff;
+                font-size: 16px;
+                margin-top: -6px;
+                margin-right: 25px;
+            }
+            .contact p a {
+                margin-top: 0px;
+                padding-left: 6px;
+                margin-left: -5px;
+            }
+            .contact p {
+                margin-top: -61px;
+            }
+            .footer .contact .copyright_text {
+                margin: 0px;
+            }
+        }
         /* ----- */
         
         @media (min-width: 768px) {
@@ -357,9 +490,10 @@
     </div>
 
 
-    <div class="row" style="height: 100%;
-position: absolute;
-width: 100%;">
+    <div class="row" style="height: 950px;
+    position: absolute;
+    width: 100%;
+">
         <p class="bg-image" style="width:100;     background-size: 97%;"></p>
 
 
@@ -374,10 +508,7 @@ width: 100%;">
         <div class="container1">
             <div class="row1">
                 <div class="col-sm-4">
-                    <a href="https://youtube.com/channel/UCOl0rO5Oi0B74DV1X5nX9sA" target="_blank"><img src="./images/yt.png" style="width: 60%;
-                        margin-bottom: x;
-                        margin-top: -172px;
-                        margin-left: -199px;" alt="youtube"></a>
+                    <a href="https://youtube.com/channel/UCOl0rO5Oi0B74DV1X5nX9sA" target="_blank"><img src="./images/yt.png" alt="youtube"></a>
                 </div>
             </div>
         </div>
@@ -390,7 +521,7 @@ width: 100%;">
             <a href="tel:+91 6380023891"><img src="./images/calls.png" class="call" />+91 6380023891</a><br>
             <a href="mailto:ylokesh18062001@gmail.com"><img src="./images/mail.png" class="mail" />ylokesh18062001@gmail.com</a>
 
-            <p style="margin-top:-50px"><span class="copyright_text">Copyright © 2022 <a href="#">Ettercap.</a>All
+            <p><span class="copyright_text">Copyright © 2022 <a href="#">Ettercap.</a>All
                     rights reserved</span>
                 <span class="policy_terms">
                     <a href="#">Privacy policy</a>

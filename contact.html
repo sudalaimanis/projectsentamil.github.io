@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html>
+<?php 
+include './email.php';
+?>
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -55,7 +58,7 @@
             margin: -30px;
             padding: -6px;
             overflow: hidden;
-            background-color: #6e4a17;
+            /*background-color: #ffb955;*/
         }
         
         li {
@@ -140,13 +143,13 @@
         
         .bg-img {
             /* The image used */
-            background-image: url(./images/bg.jpeg);
-            min-height: 321px;
+            background-image: url(./images/nav.jpeg);
+            min-height: 295px;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
             position: relative;
-            width: 103%;
+            width: 102%;
         }
         /* Position the navbar container inside the image */
         
@@ -167,45 +170,58 @@
         .topnav {
             margin-top: 7px;
             overflow: hidden;
-            background-color: #333;
+            /* background-color: #333; */
             margin-left: 145px;
-            height: 85px;
+            height: 62px;
             list-style-type: none;
-            margin: -20px;
+            margin: 13px;
             padding: 0;
             overflow: hidden;
-            background-color: #6e4a17;
+            /* background-color: #000000; */
             display: block;
-            color: white;
+            /* color: white; */
             text-align: center;
-            padding: 23px 83px;
-            padding-right: 152px;
+            padding: 10px 88px;
+            padding-right: 150px;
             text-decoration: none;
-            border-radius: 8px;
         }
         /* Navbar links */
         
         .topnav a {
             margin-top: 26px;
             overflow: hidden;
-            background-color: #f1e1e1;
+            /* background-color: #f1e1e1; */
             margin-left: 106px;
             height: 82px;
             display: block;
             color: white;
             text-align: center;
+            font-weight: bold;
             padding: 27px -4px;
             text-decoration: none;
             padding: -11px 11px;
             margin-bottom: 9px;
-            background-color: #6e4a17;
-            color: #fffbfb;
+            /* background-color: #6e4a17; */
+            color: #0023ff;
             box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
         }
         
         .topnav a:hover {
-            background-color: #ddd;
-            color: black;
+            background-color: rgb(206, 194, 86);
+            color: rgb(0, 17, 255);
+        }
+        /* .active {
+            background-color: #04AA6D;
+        } */
+        
+        .nav-heading {
+            color: #fff;
+            position: relative;
+            margin: -16px 614px;
+            margin-top: 89px;
+            margin-left: -579px;
+            font-size: 45px;
+            z-index: 1;
         }
         /* For mobile phones: */
         
@@ -294,8 +310,9 @@
             font-weight: 500;
         }
         
-        input[type=text],
+        input[type=name],
         input[type=email],
+        input[type=message],
         select,
         textarea {
             width: 100%;
@@ -320,12 +337,10 @@
         input[type=submit]:hover {
             background-color: #45a049;
         }
-        
-        .container {
+        /* .container {
             border-radius: 5px;
-            background-color: #f2f2f2;
             padding: 20px;
-        }
+        } */
     </style>
 </head>
 
@@ -360,13 +375,13 @@
                 <h3>Contact Form</h3><br>
                 <form method="post" action="email.php">
                     <label for="fname"> Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <input type="name" id="fname" name="firstname" placeholder="Your name..">
 
                     <label for="mail id">Mail id</label>
-                    <input type="email" id="maild id" name="lastname" placeholder="your mail id..">
+                    <input type="email" id="mail" name="lastname" placeholder="your mail id..">
 
                     <label for="subject">message</label>
-                    <textarea id="message" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    <textarea type="message" id="message" name="subject" placeholder="Write something.." style="height:200px"></textarea>
 
                     <input type="submit" value="Submit">
                 </form>
