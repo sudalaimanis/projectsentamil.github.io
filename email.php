@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 
 $errors = [];
 $errorMessage = '';
@@ -32,7 +32,7 @@ if (!empty($_POST)) {
         $body = join(PHP_EOL, $bodyParagraphs);
 
         if (mail($toEmail, $emailSubject, $body, $headers)) {
-            header('Location: thank-you.html');
+            header('Location: thank-you for contact us.html');
         } else {
             $errorMessage = 'Oops, something went wrong. Please try again later';
         }
@@ -45,27 +45,22 @@ if (!empty($_POST)) {
 ?>
  the server-side validation, you can use the following code:
 
-<?php
 
-$errors = [];
 
-if (!empty($_POST)) {
-   $name = $_POST['name'];
-   $email = $_POST['email'];
-   $message = $_POST['message'];
 
-   if (empty($name)) {
-       $errors[] = 'Name is empty';
-   }
+//get data from form  
 
-   if (empty($email)) {
-       $errors[] = 'Email is empty';
-   } else if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-       $errors[] = 'Email is invalid';
-   }
-
-   if (empty($message)) {
-       $errors[] = 'Message is empty';
-   }
+$name = $_POST['name'];
+$email= $_POST['email'];
+$message= $_POST['message'];
+$to = "youremail@mail.com";
+$subject = "Mail From website";
+$txt ="Name = ". $name . "\r\n  Email = " . $email . "\r\n Message =" . $message;
+$headers = "From: noreply@yoursite.com" . "\r\n" .
+"CC: somebodyelse@example.com";
+if($email!=NULL){
+    mail($to,$subject,$txt,$headers);
 }
-
+//redirect
+header("Location:thankyou.html");
+?>
