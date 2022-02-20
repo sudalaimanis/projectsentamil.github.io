@@ -4,534 +4,29 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        * {
-            box-sizing: border-box;
-            box-sizing: border-box;
-            margin: -5px;
-            margin-right: 0px;
-            margin-left: -4px;
-            padding: 0px;
-        }
-        
-        .row::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
-        
-        [class*="col-"] {
-            float: left;
-            padding: 15px;
-        }
-        
-        html {
-            font-family: "Lucida Sans", sans-serif;
-        }
-        
-        .aside {
-            height: 326px;
-            width: 585px;
-            margin-left: 3px;
-            margin-top: 130px;
-        }
-        
-        .aside1 {
-            height: 361px;
-            width: 421px;
-            margin-left: -157px;
-            margin-top: 16px;
-        }
-        
-        .paragraph {
-            margin: 7px;
-            line-height: 1.8;
-            margin-left: 68px;
-        }
-        
-        .header {
-            background-color: #1177ca;
-            color: #ffffff;
-            padding: 15px;
-        }
-        
-        .nav-heading {
-            float: right;
-        }
-        
-        ul {
-            list-style-type: none;
-            margin: -30px;
-            padding: -6px;
-            overflow: hidden;
-            /*background-color: #ffb955;*/
-        }
-        
-        li {
-            float: left;
-        }
-        
-        li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-        
-        .footer {
-            background-color: #6e4a17;
-            color: #ffffff;
-            text-align: center;
-            font-size: 14px;
-            padding: 15px;
-            clear: both;
-            position: relative;
-            height: 80px;
-            margin-top: 1217px;
-        }
-        
-        .fa {
-            padding: 22px -2px;
-            font-size: 18px;
-            width: 16px;
-            text-align: left;
-            text-decoration: none;
-            margin: -1px 15px;
-            margin-left: 31px;
-            margin-right: 4px;
-            margin-top: 18px;
-        }
-        
-        .fa:hover {
-            opacity: 0.7;
-        }
-        
-        .fa-facebook {
-            margin-top: 1px;
-            background: #6e4a17;
-            color: white;
-            border-radius: 11px;
-            width: 10px;
-        }
-        
-        .fa-twitter {
-            background: #6e4a17;
-            color: white;
-            border-radius: 11px;
-        }
-        
-        .fa-youtube {
-            background: #6e4a17;
-            color: white;
-            border-radius: 12px;
-        }
-        
-        .fa-instagram {
-            background: #6e4a17;
-            color: white;
-            border-radius: 12px;
-        }
-        
-        .call {
-            width: 20px;
-            margin-right: 1%;
-            margin-left: -83%;
-            margin-top: 6px;
-        }
-        
-        .mail {
-            width: 14px;
-            margin-right: 1%;
-            margin-left: -78%;
-            margin-top: 3px;
-        }
-        
-        .footer .contact p .copyright_text {
-            margin-top: 0px;
-            padding-left: 6px;
-            margin-left: -5px;
-        }
-        
-        .bg-img {
-            /* The image used */
-            background-image: url(./images/nav.jpeg);
-            min-height: 295px;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: relative;
-            width: 102%;
-        }
-        /* Position the navbar container inside the image */
-        
-        .container {
-            position: absolute;
-            margin: -75px;
-            width: auto;
-        }
-        /* The navbar */
-        
-        .topnav {
-            margin-top: 7px;
-            overflow: hidden;
-            /* background-color: #333; */
-            margin-left: 145px;
-            height: 62px;
-            list-style-type: none;
-            margin: 13px;
-            padding: 0;
-            overflow: hidden;
-            /* background-color: #000000; */
-            display: block;
-            /* color: white; */
-            text-align: center;
-            padding: 10px 88px;
-            padding-right: 150px;
-            text-decoration: none;
-        }
-        /* Navbar links */
-        
-        .topnav a {
-            margin-top: 26px;
-            overflow: hidden;
-            /* background-color: #f1e1e1; */
-            margin-left: 106px;
-            height: 82px;
-            display: block;
-            color: white;
-            text-align: center;
-            font-weight: bold;
-            padding: 27px -4px;
-            text-decoration: none;
-            padding: -11px 11px;
-            margin-bottom: 9px;
-            /* background-color: #6e4a17; */
-            color: #0023ff;
-            box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
-        }
-        
-        .topnav a:hover {
-            background-color: rgb(206, 194, 86);
-            color: rgb(0, 17, 255);
-        }
-        /* .active {
-            background-color: #04AA6D;
-        } */
-        
-        .nav-heading {
-            color: #fff;
-            position: relative;
-            margin: -16px 614px;
-            margin-top: 89px;
-            margin-left: -579px;
-            font-size: 45px;
-            z-index: 1;
-        }
-        /* .active {
-            background-color: #04AA6D;
-        } */
-        /* For mobile phones: */
-        
-        [class*="col-"] {
-            width: 100%;
-        }
-        
-        .heading {
-            color: #fae9e9;
-            margin-left: 10px;
-            margin-top: 10px;
-        }
-        /* heading for founder  */
-        
-        .row {
-            background-image: url('./images/background-img.jpg');
-            background-repeat: no-repeat;
-            background-attachment: inherit;
-            background-position: center center;
-            background-size: cover;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-            height: 1300px;
-            position: absolute;
-            width: 101.4%;
-        }
-        
-        .heading1 {
-            margin: 7px;
-            line-height: 1.8;
-            margin-left: 68px;
-        }
-        
-        .row.col-7 {
-            margin-left: 0px;
-        }
-        
-        @media (max-width: 768px) {
-            .header .nav-heading {
-                margin: -4px 303px;
-                margin-top: 86px;
-                margin-left: -348px;
-                font-size: 22px;
-            }
-            .topnav {
-                height: 52px;
-                list-style-type: none;
-                margin: 12px;
-                /* padding: 0; */
-                overflow: hidden;
-                /* background-color: #000000; */
-                display: block;
-                /* color: white; */
-                text-align: center;
-                padding: 16px 16px;
-                padding-right: 114px;
-                text-decoration: none;
-            }
-            /* Navbar links */
-            .topnav a {
-                margin-top: 26px;
-                overflow: hidden;
-                /* background-color: #f1e1e1; */
-                margin-left: 57px;
-                height: 82px;
-                display: block;
-                color: white;
-                text-align: center;
-                font-weight: 900;
-                padding: 27px -4px;
-                text-decoration: none;
-                padding: 9px 0px;
-                margin-bottom: 9px;
-                /* background-color: #6e4a17; */
-                color: #0023ff;
-                box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
-            }
-            .topnav a:hover {
-                background-color: rgb(206, 194, 86);
-                color: rgb(0, 17, 255);
-            }
-            .container {
-                position: absolute;
-                margin: -75px;
-                width: auto;
-                padding: 6px 29px;
-            }
-            ul {
-                list-style-type: none;
-                margin: -30px;
-                padding: -6px;
-                overflow: hidden;
-                /*background-color: #ffb955;*/
-            }
-            li {
-                float: left;
-            }
-            li a {
-                display: block;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
-            .container1 .row1 .col-sm-4 a img {
-                width: 60%;
-                margin-bottom: 0;
-                margin-top: 0px;
-                margin-left: -10px;
-            }
-            .col-5 {
-                color: white;
-                margin: 69px;
-                line-height: 37px;
-            }
-            .footer {
-                background-color: #6e4a17;
-                color: #ffffff;
-                text-align: center;
-                font-size: 14px;
-                padding: 15px;
-                clear: both;
-                position: relative;
-                height: 80px;
-                margin-top: 2070px;
-            }
-            .fa {
-                padding: 22px -2px;
-                font-size: 18px;
-                width: 16px;
-                text-align: left;
-                text-decoration: none;
-                margin: -8px 6px;
-                margin-left: 31px;
-                margin-right: 4px;
-                margin-top: 18px;
-            }
-            .contact {
-                margin: 7px;
-                margin-left: 75px;
-                margin-top: 0px;
-            }
-            .contact a {
-                text-decoration: none;
-                padding-right: 34px;
-                /* justify-content: space-evenly; */
-                margin: 28px 0px;
-                color: #fff;
-                font-size: 16px;
-                margin-top: -6px;
-                margin-right: 25px;
-            }
-            .contact p a {
-                margin-top: 0px;
-                padding-left: 6px;
-                margin-left: -5px;
-            }
-            .contact p {
-                margin-top: -61px;
-            }
-            .footer .contact .copyright_text {
-                margin: 0px;
-            }
-            .aside {
-                height: 361px;
-                width: 421px;
-                margin-left: 138px;
-                margin-top: 29px;
-            }
-            .heading {
-                color: #fae9e9;
-                margin-left: 10px;
-                margin-top: 10px;
-            }
-            .aside1 {
-                height: 361px;
-                width: 438px px;
-                margin-left: 138px;
-                margin-top: -940px;
-            }
-            .row {
-                background-image: url(./images/background-img.jpg);
-                background-repeat: no-repeat;
-                background-attachment: inherit;
-                background-position: center center;
-                background-size: cover;
-                -webkit-background-size: cover;
-                -moz-background-size: cover;
-                -o-background-size: cover;
-                background-size: cover;
-                height: 2077px;
-                position: absolute;
-                width: 101.4%;
-            }
-            .heading1 {
-                margin: 455px;
-                line-height: 1.8;
-                margin-left: 70px;
-            }
-            .row.col-7 {
-                margin-left: 0px;
-            }
-        }
-        /* end of meadi query 768px width */
-        /* .row {
-                /* background-image: url('./images/background-img.jpg');
-                background-repeat: no-repeat;
-                background-attachment: inherit;
-                background-size: cover;
-                position: absolute; */
-        /* width: 101.4%;
-                height: 1200px;
-            } */
-        /* .bg-image {
-                background-image: url('./images/background-img.jpg');
-                background-repeat: no-repeat;
-                background-attachment: inherit;
-                background-position: top center;
-                background-size: cover;
-                height: 950px;
-                position: absolute;
-                width: 101.4%;
-                height: 1200px;
-            } */
-        
-        @media only screen and (min-width: 768px) {
-            /* For desktop: */
-            .col-1 {
-                width: 8.33%;
-            }
-            .col-2 {
-                width: 16.66%;
-            }
-            .col-3 {
-                width: 25%;
-            }
-            .col-4 {
-                width: 33.33%;
-            }
-            .col-5 {
-                width: 41.66%;
-            }
-            .col-6 {
-                width: 50%;
-            }
-            .col-7 {
-                width: 58.33%;
-            }
-            .col-8 {
-                width: 66.66%;
-            }
-            .col-9 {
-                width: 75%;
-            }
-            .col-10 {
-                width: 83.33%;
-            }
-            .col-11 {
-                width: 91.66%;
-            }
-            .col-12 {
-                width: 100%;
-            }
-        }
-    </style>
-    <style>
-        @media only screen and (min-width: 768px) {}
-        /* Mobile */
-        
-        a {
-            text-decoration: none;
-            color: white;
-            font-weight: 500;
-        }
-    </style>
+    <link rel="stylesheet" href="./styles.css" />
 </head>
 
 <body>
-    <div class="header">
-        <h1 class="nav-heading">உலகத் தமிழர் திறன் வளர் சங்கம்</h1>
-
-
-        <div class="bg-img"></div>
-        <div class="container">
-            <div class="topnav">
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./schemes.html">Schemes</a></li>
-                    <li> <a href="./achievements.html">Achievements</a></li>
-                    <li><a href="./gallery.html">Gallery</a></li>
-                    <li><a href="./contact.html">Contact us</a></li>
-                </ul>
-            </div>
+    <div id="header">
+        <div class="header-bg">
+            <img src="./images/header-bg.jpeg" alt="Snow" style="width:100%;height: 250px;">
+            <div class="top-left">உலகத் தமிழர் திறன் வளர் சங்கம்</div>
         </div>
-
+        <div id="header-nav">
+            <ul id="header-nav-li">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./schemes.html">Schemes</a></li>
+                <li> <a href="./achievements.html">Achievements</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./contact.html">Contact us</a></li>
+            </ul>
+        </div>
     </div>
-    <div class="row">
+    <div class="row" style="color: rgb(255, 255, 255); background-color:black">
         <p class="bg-image">
-            <div class="col-6" style="color: white;">
-                <h1 class="heading">Achievements : </h1>
+            <div class="col-6" style="    margin-top: -20px;">
+                <h1 class="heading" style="font-family: Roboto, Arial, sans-serif;">Achievements</h1>
                 <P class="paragraph"> 1. 1200 மணி நேரம் தொடர் இணையவழி பேச்சரங்கம் சங்க இலக்கியங்களை பற்றி<br> 2. பள்ளி மாணவர்கள் 4020 இந்திய தேசிய கொடி வரைதல் ஒரு மணி நேரத்தில்.<br> 3. 12 மணி நேரம் இனியவை நாற்பது வாசித்தல் உலக சாதனை.<br> 4. 15 மணி நேரம விக்ரமாதித்தன் கதைகள்
                     சொல்லுதல் உலக சாதனை.<br> 5. 15 மணி நேர தமிழர் விளையாட்டுகள் விளையாடும் உலக சாதனை.<br> 6. பள்ளி மாணவர்கள் 13 மணி நேர சிலம்பம் சுற்றுதல் உலக சாதனை.<br> 7. 26 மணி நேரம் அக்னி சிறகுகள் புத்தகம் வாசித்தல்<br> 8. 50 மணி நேர ஆங்கில நாவல்
                     வாசித்தல் உலக சாதனை.
@@ -542,13 +37,19 @@
             </div>
             <div class="col-3 right">
                 <div class="aside">
-                    <img src="./images/achievements.jpeg" style="height:100%;width: 100%;">
+                    <img src="./achive/achievements.jpeg" style="height:100%;width: 100%; border-radius: 52px;">
 
                 </div>
             </div>
-            <div class="col-7" style="margin-left: 62px;color: #fff;">
+            <div class="col-7" style="margin-left: 62px;">
                 <p class="heading1">
-                    <h1>Founder : </h1><br>
+                    <h1 style="font-family: Roboto, Arial, sans-serif;"> Founder</h1><br>
+                    <div class="col-3 right">
+                        <div class="aside1">
+                            <img src="./images/founder.jpeg" style="height: 361px;
+                              width: 421px; border-radius: 50%;">
+                        </div>
+                    </div>
                     <h2> யு.லோகேஷ் </h2>
                     <h4>நிறுவனர் </h4>
                     <strong> இளம் கவிஞர், எழுத்தாளர் பல்வேறு உலக சாதனைகள் மற்றும்
@@ -559,47 +60,103 @@
                     <h4>கௌரவ ஆலோசகர் </h4>ஆசிரியர், பேச்சாளர், தொகுப்பாளினி, மாபெரும் ஆளுமை<br><br>
                     <h2>துரை.தேவேந்திரன்
                     </h2>
-                    <h4>தலைமை நிர்வாக அதிகாரி </h4>பேச்சாளர் மற்றும் ஆகச்சிறந்த ஆளுமை.<br><br>
+                    <h4>தலைமை நிர்வாக அதிகாரி </h4>பேச்சாளர் மற்றும் ஆகச்சிறந்த ஆளுமை.<br>
                     <h2>மஞ்சு.பா, யசோதா.D, பிரேமா , மற்றும் பல ஆளுமைகள். </h2>
                     <h4>மாவட்ட ஒருங்கிணைப்பாளர்கள் </h4><br>
                 </p>
             </div>
-            <div class="col-3 right">
-                <div class="aside1">
-                    <img src="./images/founder.jpeg" style="height: 361px;
-                      width: 421px;">
-                </div>
-            </div>
+
         </p>
     </div>
 
     <!-- founder -->
 
     <!-- footer -->
-    <div class="footer">
-        <div class="contact">
-            <a href="tel:+91 6380023891"><img src="./images/calls.png" class="call" />+91 6380023891</a><br>
-            <a href="mailto:ylokesh18062001@gmail.com"><img src="./images/mail.png" class="mail" />ylokesh18062001@gmail.com</a>
-
-            <p style="margin-top:-55px"><span class="copyright_text">Copyright © 2022 <a href="#">Ettercap.</a>All
-                    rights reserved</span>
-                <span class="policy_terms">
-                    <a href="#">Privacy policy</a>
-                    <a href="#">Terms & condition</a></span></p>
-
-            <div class="social-media">
-                <span>
-                    <a href="https://www.facebook.com/111729478102577/photos/a.111731024769089/111731031435755/?type=3&app=fbl"
+    <div id="footer">
+        <div id="footer-content">
+            <p><span id="copyright_text">Copyright © 2022 <a href="#"> Ettercap.</a> All
+                    rights reserved</span><span id="social-media"> <a
+                        href="https://www.facebook.com/111729478102577/photos/a.111731024769089/111731031435755/?type=3&app=fbl"
                         class="fa fa-facebook"></a>
                     <a href="https://twitter.com/SachinLokesh18?t=3-TZdsz0F8hwjGAvzbLo8A&s=09"
                         class="fa fa-twitter"></a>
                     <a href="https://instagram.com/sachin.lokesh?utm_medium=copy_link" class="fa fa-instagram"></a>
-                    <a href="https://www.youtube.com/channel/UCOl0rO5Oi0B74DV1X5nX9sA" class="fa fa-youtube"></a>
-                </span>
-            </div>
+                    <a href="https://www.youtube.com/channel/UCOl0rO5Oi0B74DV1X5nX9sA"
+                        class="fa fa-youtube"></a></span></p>
         </div>
-
     </div>
 </body>
 
 </html>
+
+<style>
+    .aside {
+        height: 326px;
+        width: 553px;
+        margin-left: 53px;
+        margin-top: 20px;
+    }
+    
+    .aside1 {
+        height: 361px;
+        width: 421px;
+        margin-left: -26px;
+        margin-top: 16px;
+    }
+    
+    .paragraph {
+        margin: 7px;
+        line-height: 1.8;
+        margin-left: 68px;
+    }
+    
+    .container {
+        position: absolute;
+        margin: -75px;
+        width: auto;
+    }
+    
+    .row.col-7 {
+        margin-left: 0px;
+    }
+    
+    @media only screen and (min-width: 768px) {
+        /* For desktop: */
+        .col-1 {
+            width: 8.33%;
+        }
+        .col-2 {
+            width: 16.66%;
+        }
+        .col-3 {
+            width: 25%;
+        }
+        .col-4 {
+            width: 33.33%;
+        }
+        .col-5 {
+            width: 41.66%;
+        }
+        .col-6 {
+            width: 50%;
+        }
+        .col-7 {
+            width: 58.33%;
+        }
+        .col-8 {
+            width: 66.66%;
+        }
+        .col-9 {
+            width: 75%;
+        }
+        .col-10 {
+            width: 83.33%;
+        }
+        .col-11 {
+            width: 91.66%;
+        }
+        .col-12 {
+            width: 100%;
+        }
+    }
+</style>

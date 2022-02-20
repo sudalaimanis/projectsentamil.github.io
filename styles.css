@@ -1,0 +1,219 @@
+@media only screen and (min-device-width: 768px) {
+    #header {
+        margin-top: 0px;
+        position: relative;
+        height: 320px;
+    }
+    .header-bg {
+        position: relative;
+        text-align: center;
+    }
+    .top-left {
+        position: absolute;
+        top: 8px;
+        left: 16px;
+        color: white;
+        font-family: Roboto, Arial, sans-serif;
+        font-size: 30px;
+        font-weight: 900;
+    }
+    #header-nav-li li {
+        display: inline;
+        padding: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 600;
+    }
+    #header-nav-li li a {
+        text-decoration: none;
+    }
+    #header-nav-li li:hover {
+        background-color: gold;
+    }
+    #header-nav {
+        display: block;
+        background-color: orange;
+        width: 100%;
+        padding: 5px;
+    }
+    #footer {
+        position: fixed;
+        left: 0px;
+        bottom: 0;
+        width: 100%;
+        background-color: orange;
+        color: white;
+        text-align: center;
+        height: 65px;
+    }
+    .fa {
+        padding: 10px;
+        font-size: 23px;
+        width: 25px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 50%;
+    }
+    .fa:hover {
+        opacity: 0.7;
+    }
+    .fa-facebook {
+        background: #3B5998;
+        color: white;
+    }
+    .fa-twitter {
+        background: #55ACEE;
+        color: white;
+    }
+    .fa-youtube {
+        background: #bb0000;
+        color: white;
+    }
+    .fa-instagram {
+        background: #125688;
+        color: white;
+    }
+    #content {
+        /* The image used */
+        background-color: black;
+        /* Full height */
+        height: 100%;
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* scrolling */
+        overflow-y: auto;
+        /* tamil font */
+        font-family: Roboto, Arial, sans-serif;
+        color: white;
+    }
+    .aside {
+        height: 326px;
+        width: 585px;
+        margin-left: 3px;
+        margin-top: 130px;
+    }
+    .aside1 {
+        height: 361px;
+        width: 421px;
+        margin-left: -157px;
+        margin-top: 16px;
+    }
+    .paragraph {
+        margin: 7px;
+        line-height: 1.8;
+        margin-left: 68px;
+    }
+}
+
+@media only screen and (max-device-width: 640px) {
+    #header {
+        margin-top: 0px;
+        position: relative;
+        height: 320px;
+    }
+    .header-bg {
+        position: relative;
+        text-align: center;
+    }
+    .top-left {
+        position: absolute;
+        top: 8px;
+        left: 16px;
+        color: white;
+        font-family: Roboto, Arial, sans-serif;
+        font-size: 30px;
+        font-weight: 900;
+    }
+    #header-nav-li li {
+        display: inline;
+        padding: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 600;
+    }
+    #header-nav-li li a {
+        text-decoration: none;
+    }
+    #header-nav-li li:hover {
+        background-color: gold;
+    }
+    #header-nav {
+        display: block;
+        background-color: orange;
+        width: 100%;
+        padding: 5px;
+    }
+    #footer {
+        position: fixed;
+        left: 0px;
+        bottom: 0;
+        width: 100%;
+        background-color: orange;
+        color: white;
+        text-align: center;
+        height: 65px;
+    }
+    .fa {
+        padding: 10px;
+        font-size: 23px;
+        width: 25px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        border-radius: 50%;
+    }
+    .fa:hover {
+        opacity: 0.7;
+    }
+    .fa-facebook {
+        background: #3B5998;
+        color: white;
+    }
+    .fa-twitter {
+        background: #55ACEE;
+        color: white;
+    }
+    .fa-youtube {
+        background: #bb0000;
+        color: white;
+    }
+    .fa-instagram {
+        background: #125688;
+        color: white;
+    }
+    #content {
+        /* The image used */
+        /* background-image: url("img_girl.jpg"); */
+        background-color: black;
+        /* Full height */
+        height: 100%;
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* scrolling */
+        overflow-y: auto;
+        /* tamil font */
+        font-family: Roboto, Arial, sans-serif;
+        color: white;
+    }
+    /* achievment page images */
+    .aside {
+        height: 326px;
+        width: 585px;
+        margin-left: 3px;
+        margin-top: 130px;
+    }
+    .aside1 {
+        height: 361px;
+        width: 421px;
+        margin-left: -157px;
+        margin-top: 16px;
+    }
+    .paragraph {
+        margin: 7px;
+        line-height: 1.6;
+        margin-left: 68px;
+    }
+}

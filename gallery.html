@@ -5,506 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        .mySlides {
-            display: none;
-        }
-    </style>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: -5px;
-            margin-right: 3px;
-            margin-left: -4px;
-            padding: 0px;
-        }
-        
-        .row::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
-        
-        [class*="col-"] {
-            float: left;
-            padding: 15px;
-        }
-        
-        html {
-            font-family: "Lucida Sans", sans-serif;
-        }
-        
-        .header {
-            background-color: #1177ca;
-            color: #ffffff;
-            padding: 15px;
-        }
-        
-        .nav-heading {
-            float: right;
-        }
-        
-        .aside {
-            background-color: #33b5e5;
-            padding: 15px;
-            color: #ffffff;
-            text-align: center;
-            font-size: 14px;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-        }
-        
-        ul {
-            list-style-type: none;
-            margin: -30px;
-            padding: -6px;
-            overflow: hidden;
-            /*background-color: #ffb955;*/
-        }
-        
-        li {
-            float: left;
-        }
-        
-        li a {
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-        
-        .footer {
-            background-color: #6e4a17;
-            color: #ffffff;
-            text-align: center;
-            font-size: 14px;
-            padding: 15px;
-            clear: both;
-            position: relative;
-            height: 80px;
-            margin-top: 715px;
-        }
-        
-        .footer .contact p {
-            margin-top: -35px;
-        }
-        
-        .fa {
-            padding: 22px -2px;
-            font-size: 18px;
-            width: 16px;
-            text-align: left;
-            text-decoration: none;
-            margin: -8px 6px;
-            margin-left: 31px;
-            margin-right: 4px;
-            margin-top: 18px;
-        }
-        
-        .fa:hover {
-            opacity: 0.7;
-        }
-        
-        .fa-facebook {
-            margin-top: 1px;
-            background: #6e4a17;
-            color: white;
-            border-radius: 11px;
-            width: 10px;
-        }
-        
-        .fa-twitter {
-            background: #6e4a17;
-            color: white;
-            border-radius: 11px;
-        }
-        
-        .fa-youtube {
-            background: #6e4a17;
-            color: white;
-            border-radius: 12px;
-        }
-        
-        .fa-instagram {
-            background: #6e4a17;
-            color: white;
-            border-radius: 12px;
-        }
-        
-        .call {
-            width: 20px;
-            margin-right: 1%;
-            margin-left: -83%;
-            margin-top: 6px;
-        }
-        
-        .mail {
-            width: 14px;
-            margin-right: 1%;
-            margin-left: -78%;
-            margin-top: 3px;
-        }
-        
-        .bg-img {
-            /* The image used */
-            background-image: url(./images/nav.jpeg);
-            min-height: 295px;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            position: relative;
-            width: 102%;
-        }
-        /* Position the navbar container inside the image */
-        
-        .container {
-            position: absolute;
-            margin: -75px;
-            width: auto;
-        }
-        /* The navbar */
-        
-        .topnav {
-            margin-top: 7px;
-            overflow: hidden;
-            /* background-color: #333; */
-            margin-left: 145px;
-            height: 62px;
-            list-style-type: none;
-            margin: 13px;
-            padding: 0;
-            overflow: hidden;
-            /* background-color: #000000; */
-            display: block;
-            /* color: white; */
-            text-align: center;
-            padding: 19px 11px;
-            padding-right: 150px;
-            text-decoration: none;
-        }
-        /* Navbar links */
-        
-        .topnav a {
-            margin-top: 26px;
-            overflow: hidden;
-            /* background-color: #f1e1e1; */
-            margin-left: 106px;
-            height: 82px;
-            display: block;
-            color: white;
-            text-align: center;
-            font-weight: 900;
-            padding: 27px -4px;
-            text-decoration: none;
-            padding: -11px 11px;
-            margin-bottom: 9px;
-            /* background-color: #6e4a17; */
-            color: #0023ff;
-            box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
-        }
-        
-        .topnav a:hover {
-            background-color: rgb(206, 194, 86);
-            color: rgb(0, 17, 255);
-        }
-        /* .active {
-            background-color: #04AA6D;
-        } */
-        
-        .nav-heading {
-            color: #fff;
-            position: relative;
-            margin: -16px 614px;
-            margin-top: 89px;
-            margin-left: -579px;
-            font-size: 45px;
-            z-index: 1;
-        }
-        /* For mobile phones: */
-        
-        [class*="col-"] {
-            width: 100%;
-        }
-        
-        .heading {
-            color: white;
-        }
-        
-        @media only screen and (min-width: 768px) {
-            /* For desktop: */
-            .col-1 {
-                width: 8.33%;
-            }
-            .col-2 {
-                width: 16.66%;
-            }
-            .col-3 {
-                width: 25%;
-            }
-            .col-4 {
-                width: 33.33%;
-            }
-            .col-5 {
-                width: 41.66%;
-            }
-            .col-6 {
-                width: 50%;
-            }
-            .col-7 {
-                width: 58.33%;
-            }
-            .col-8 {
-                width: 66.66%;
-            }
-            .col-9 {
-                width: 75%;
-            }
-            .col-10 {
-                width: 83.33%;
-            }
-            .col-11 {
-                width: 91.66%;
-            }
-            .col-12 {
-                width: 100%;
-            }
-        }
-        
-        @media (max-width: 768px) {
-            .header .nav-heading {
-                margin: -4px 303px;
-                margin-top: 86px;
-                margin-left: -348px;
-                font-size: 22px;
-                font-weight: 900;
-            }
-            .topnav {
-                height: 52px;
-                list-style-type: none;
-                margin: 12px;
-                /* padding: 0; */
-                overflow: hidden;
-                /* background-color: #000000; */
-                display: block;
-                /* color: white; */
-                text-align: center;
-                padding: 16px 16px;
-                padding-right: 114px;
-                text-decoration: none;
-            }
-            /* Navbar links */
-            .topnav a {
-                margin-top: 26px;
-                overflow: hidden;
-                /* background-color: #f1e1e1; */
-                margin-left: 57px;
-                height: 82px;
-                display: block;
-                color: white;
-                text-align: center;
-                font-weight: 900;
-                padding: 27px -4px;
-                text-decoration: none;
-                padding: 9px 0px;
-                margin-bottom: 9px;
-                /* background-color: #6e4a17; */
-                color: #0023ff;
-                box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%);
-            }
-            .topnav a:hover {
-                background-color: rgb(206, 194, 86);
-                color: rgb(0, 17, 255);
-            }
-            .container {
-                position: absolute;
-                margin: -75px;
-                width: auto;
-                padding: 6px 29px;
-            }
-            ul {
-                list-style-type: none;
-                margin: -30px;
-                padding: -6px;
-                overflow: hidden;
-                /*background-color: #ffb955;*/
-            }
-            li {
-                float: left;
-            }
-            li a {
-                display: block;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
-            .container1 .row1 .col-sm-4 a img {
-                width: 60%;
-                margin-bottom: 0;
-                margin-top: 0px;
-                margin-left: -10px;
-            }
-            .col-5 {
-                color: white;
-                margin: 69px;
-                line-height: 37px;
-            }
-            .footer {
-                background-color: #6e4a17;
-                color: #ffffff;
-                text-align: center;
-                font-size: 14px;
-                padding: 15px;
-                clear: both;
-                position: relative;
-                height: 80px;
-                margin-top: 794px;
-            }
-            .fa {
-                padding: 22px -2px;
-                font-size: 18px;
-                width: 16px;
-                text-align: left;
-                text-decoration: none;
-                margin: -8px 6px;
-                margin-left: 31px;
-                margin-right: 4px;
-                margin-top: 18px;
-            }
-            .contact {
-                margin: 7px;
-                margin-left: 75px;
-                margin-top: 0px;
-            }
-            .contact a {
-                text-decoration: none;
-                padding-right: 34px;
-                /* justify-content: space-evenly; */
-                margin: 28px 0px;
-                color: #fff;
-                font-size: 16px;
-                margin-top: -6px;
-                margin-right: 25px;
-            }
-            .contact p a {
-                margin-top: 0px;
-                padding-left: 6px;
-                margin-left: -5px;
-            }
-            .contact p {
-                margin-top: -61px;
-            }
-            .footer .contact .copyright_text {
-                margin: 0px;
-            }
-            .contact {
-                margin: 7px;
-                margin-left: 75px;
-                margin-top: 0px;
-            }
-            .contact a {
-                text-decoration: none;
-                padding-right: 34px;
-                /* justify-content: space-evenly; */
-                margin: 28px 0px;
-                color: #fff;
-                font-size: 16px;
-                margin-top: -6px;
-                margin-right: 25px;
-            }
-            .contact p a {
-                margin-top: 0px;
-                padding-left: 6px;
-                margin-left: -5px;
-            }
-            .contact p {
-                margin-top: -61px;
-            }
-            .footer .contact .copyright_text {
-                margin: 0px;
-            }
-            .footer .contact p {
-                margin-top: -65px;
-            }
-        }
-    </style>
-    <style>
-        @media only screen and (min-width: 768px) {
-            .row {
-                background-image: url('./images/background-img.jpg');
-                background-repeat: no-repeat;
-                background-attachment: inherit;
-                background-size: cover;
-            }
-        }
-        /* Mobile */
-        
-        .row {
-            background-image: url('./images/background-img.jpg');
-            background-repeat: no-repeat;
-            background-attachment: inherit;
-            background-position: top center;
-            background-size: cover;
-            height: 800px;
-            position: absolute;
-            width: 101.4%;
-        }
-        
-        a {
-            text-decoration: none;
-            color: white;
-            font-weight: 500;
-        }
-    </style>
+    <link rel="stylesheet" href="./styles.css" />
 </head>
 
 <body>
-    <div class="header">
-        <h1 class="nav-heading">உலகத் தமிழர் திறன் வளர் சங்கம்</h1>
-
-
-        <div class="bg-img"></div>
-        <div class="container">
-            <div class="topnav">
-                <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./schemes.html">Schemes</a></li>
-                    <li> <a href="./achievements.html">Achievements</a></li>
-                    <li><a href="./gallery.html">Gallery</a></li>
-                    <li><a href="./contact.html">Contact us</a></li>
-                </ul>
-            </div>
+    <div id="header">
+        <div class="header-bg">
+            <img src="./images/header-bg.jpeg" alt="Snow" style="width:100%;height: 250px;">
+            <div class="top-left">உலகத் தமிழர் திறன் வளர் சங்கம்</div>
         </div>
-
+        <div id="header-nav">
+            <ul id="header-nav-li">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./schemes.html">Schemes</a></li>
+                <li> <a href="./achievements.html">Achievements</a></li>
+                <li><a href="./gallery.html">Gallery</a></li>
+                <li><a href="./contact.html">Contact us</a></li>
+            </ul>
+        </div>
     </div>
-    <div class="row">
+    <div class="row" style="background-color:black; margin-top: -5px">
         <p class="bg-image" style="width:100;     background-size: 97%;"></p>
-        <div class="col-6" style="color: white;">
-            <h1 class="heading">Gallery : </h1>
+        <div class="col-6" style="color: rgb(255, 255, 255); margin-top:-20px">
+            <h1 class="heading">Gallery</h1>
             <div class="w3-content w3-section" style="max-width:500px">
-                <img class="mySlides" src="./images/1.jpg" style="width:75%">
-                <img class="mySlides" src="./images/2.jpg" style="width:75%">
-                <img class="mySlides" src="./images/3.jpg" style="width:75%">
-                <img class="mySlides" src="./images/4.jpg" style="width:75%">
-                <img class="mySlides" src="./images/5.jpg" style="width:75%">
-                <img class="mySlides" src="./images/6.jpg" style="width:75%">
-                <img class="mySlides" src="./images/7.png" style="width:75%">
-                <img class="mySlides" src="./images/8.jpg" style="width:75%">
-                <img class="mySlides" src="./images/9.jpg" style="width:75%">
-                <img class="mySlides" src="./images/10.jpg" style="width:75%">
-                <img class="mySlides" src="./images/11.jpg" style="width:75%">
-                <img class="mySlides" src="./images/12.png" style="width:75%">
-                <img class="mySlides" src="./images/13.jpg" style="width:75%">
-                <img class="mySlides" src="./images/14.png" style="width:75%">
-                <img class="mySlides" src="./images/15.jpg" style="width:75%">
-                <img class="mySlides" src="./images/16.jpg" style="width:75%">
-                <img class="mySlides" src="./images/17.png" style="width:75%">
-                <img class="mySlides" src="./images/18.jpg" style="width:75%">
-                <img class="mySlides" src="./images/19.png" style="width:75%">
-                <img class="mySlides" src="./images/20.jpg" style="width:75%">
-                <img class="mySlides" src="./images/21.jpg" style="width:75%">
-                <img class="mySlides" src="./images/22.jpg" style="width:75%">
-                <img class="mySlides" src="./images/23.jpg" style="width:75%">
+                <img class="mySlides" src="./achive/1.jpg" style="width:75%">
+                <img class="mySlides" src="./achive/2.jpg" style="width:75%">
+                <img class="mySlides" src="./achive/3.jpg" style="width:75%">
+                <img class="mySlides" src="./achive/4.jpg" style="width:75%">
+                <img class="mySlides" src="./achive/5.jpg" style="width:75%">
+                <img class="mySlides" src="./achive/6.jpg" style="width:75%">
+                <img class="mySlides" src="./achive/7.png" style="width:75%">
+                <img class="mySlides" src="./achive/8.jpg" style="width:75%">
+                <img class="mySlides" src="./achive/9.jpg" style="width:75%">
+                <img class="mySlides" src="./achive/10.jpg" style="width:75%">
+                <img class="mySlides" src="./achive/11.jpg" style="width:75%">
+                <img class="mySlides" src="./achive/12.png" style="width:75%">
+                <img class="mySlides" src="./achive/13.jpg" style="width:75%">
+                <img class="mySlides" src="./achive/14.png" style="width:75%">
+                <img class="mySlides" src="./achive/15.jpg" style="width:75%">
+                <img class="mySlides" src="./achive/16.jpg" style="width:75%">
+                <img class="mySlides" src="./achive/17.png" style="width:75%">
+                <img class="mySlides" src="./achive/18.jpg" style="width:75%">
+                <img class="mySlides" src="./achive/19.png" style="width:75%">
+                <img class="mySlides" src="./achive/20.jpg" style="width:75%">
+                <img class="mySlides" src="./achive/21.jpg" style="width:75%">
+                <img class="mySlides" src="./achive/22.jpg" style="width:75%">
+                <img class="mySlides" src="./achive/23.jpg" style="width:75%">
 
             </div>
         </div>
@@ -527,31 +74,67 @@
             setTimeout(carousel, 2000); // Change image every 2 seconds
         }
     </script>
-    <div class="footer">
-        <div class="contact">
-            <a href="tel:+91 6380023891"><img src="./images/calls.png" class="call" />+91 6380023891</a><br>
-            <a href="mailto:ylokesh18062001@gmail.com"><img src="./images/mail.png" class="mail" />ylokesh18062001@gmail.com</a>
-
-            <p><span class="copyright_text">Copyright © 2022 <a href="#">Ettercap.</a>All
-                    rights reserved</span>
-                <span class="policy_terms">
-                    <a href="#">Privacy policy</a>
-                    <a href="#">Terms & condition</a></span></p>
-
-            <div class="social-media">
-                <span>
-                    <a href="https://www.facebook.com/111729478102577/photos/a.111731024769089/111731031435755/?type=3&app=fbl"
+    <div id="footer">
+        <div id="footer-content">
+            <p><span id="copyright_text">Copyright © 2022 <a href="#"> Ettercap.</a> All
+                    rights reserved</span><span id="social-media"> <a
+                        href="https://www.facebook.com/111729478102577/photos/a.111731024769089/111731031435755/?type=3&app=fbl"
                         class="fa fa-facebook"></a>
                     <a href="https://twitter.com/SachinLokesh18?t=3-TZdsz0F8hwjGAvzbLo8A&s=09"
                         class="fa fa-twitter"></a>
                     <a href="https://instagram.com/sachin.lokesh?utm_medium=copy_link" class="fa fa-instagram"></a>
-                    <a href="https://www.youtube.com/channel/UCOl0rO5Oi0B74DV1X5nX9sA" class="fa fa-youtube"></a>
-                </span>
-            </div>
+                    <a href="https://www.youtube.com/channel/UCOl0rO5Oi0B74DV1X5nX9sA"
+                        class="fa fa-youtube"></a></span></p>
         </div>
-
     </div>
 
 </body>
 
 </html>
+
+
+<style>
+    .mySlides {
+        display: none;
+    }
+    
+    @media only screen and (min-width: 768px) {
+        /* For desktop: */
+        .col-1 {
+            width: 8.33%;
+        }
+        .col-2 {
+            width: 16.66%;
+        }
+        .col-3 {
+            width: 25%;
+        }
+        .col-4 {
+            width: 33.33%;
+        }
+        .col-5 {
+            width: 41.66%;
+        }
+        .col-6 {
+            width: 50%;
+        }
+        .col-7 {
+            width: 58.33%;
+        }
+        .col-8 {
+            width: 66.66%;
+        }
+        .col-9 {
+            width: 75%;
+        }
+        .col-10 {
+            width: 83.33%;
+        }
+        .col-11 {
+            width: 91.66%;
+        }
+        .col-12 {
+            width: 100%;
+        }
+    }
+</style>
